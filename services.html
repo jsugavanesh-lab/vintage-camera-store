@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Vintage Camera Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-camera-retro"></i>
+                <span>Vintage Lens</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="services.html" class="nav-link active">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="account.html" class="nav-link"><i class="fas fa-user"></i></a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Professional services for vintage camera enthusiasts</p>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Camera Repair</h3>
+                    <p>Expert repair and restoration services for all vintage cameras and equipment.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Mechanical repairs</li>
+                        <li><i class="fas fa-check"></i> Electronic repairs</li>
+                        <li><i class="fas fa-check"></i> Cleaning & maintenance</li>
+                        <li><i class="fas fa-check"></i> Calibration services</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="openBookingForm('repair')">Book Repair</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3>Film Development</h3>
+                    <p>Professional film development and high-resolution scanning services.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Black & White film</li>
+                        <li><i class="fas fa-check"></i> Color film (C-41)</li>
+                        <li><i class="fas fa-check"></i> Slide film (E-6)</li>
+                        <li><i class="fas fa-check"></i> High-res scanning</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="openBookingForm('development')">Order Development</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-spray-can"></i>
+                    </div>
+                    <h3>Camera Cleaning</h3>
+                    <p>Thorough cleaning and maintenance to keep your vintage equipment in perfect condition.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Sensor cleaning</li>
+                        <li><i class="fas fa-check"></i> Lens cleaning</li>
+                        <li><i class="fas fa-check"></i> Body cleaning</li>
+                        <li><i class="fas fa-check"></i> Lubrication service</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="openBookingForm('cleaning')">Book Cleaning</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Photography Workshops</h3>
+                    <p>Learn film photography from experienced professionals in hands-on workshops.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Beginner film photography</li>
+                        <li><i class="fas fa-check"></i> Advanced techniques</li>
+                        <li><i class="fas fa-check"></i> Darkroom basics</li>
+                        <li><i class="fas fa-check"></i> One-on-one mentoring</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="openBookingForm('workshop')">Book Workshop</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="service-details">
+        <div class="container">
+            <div class="detail-tabs">
+                <button class="tab-btn active" onclick="showTab('repair')">Camera Repair</button>
+                <button class="tab-btn" onclick="showTab('development')">Film Development</button>
+                <button class="tab-btn" onclick="showTab('workshop')">Workshops</button>
+            </div>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="repair-tab">
+                    <div class="service-detail">
+                        <div class="detail-image">
+                            <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Camera Repair">
+                        </div>
+                        <div class="detail-content">
+                            <h3>Professional Camera Repair Services</h3>
+                            <p>Our expert technicians have decades of experience working with vintage cameras. We specialize in restoring classic cameras to their original working condition.</p>
+                            
+                            <h4>Repair Process:</h4>
+                            <ol>
+                                <li>Initial assessment and quote</li>
+                                <li>Disassembly and cleaning</li>
+                                <li>Repair or replacement of faulty parts</li>
+                                <li>Calibration and testing</li>
+                                <li>Quality assurance check</li>
+                            </ol>
+
+                            <h4>Pricing:</h4>
+                            <ul>
+                                <li>Basic cleaning & maintenance: $50-100</li>
+                                <li>Minor repairs: $100-300</li>
+                                <li>Major restoration: $300-800</li>
+                                <li>Complex repairs: Quote based on assessment</li>
+                            </ul>
+
+                            <button class="btn btn-primary" onclick="openBookingForm('repair')">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="development-tab">
+                    <div class="service-detail">
+                        <div class="detail-image">
+                            <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Film Development">
+                        </div>
+                        <div class="detail-content">
+                            <h3>Film Development & Scanning</h3>
+                            <p>We offer professional film development services using the latest equipment and techniques to ensure the best results for your precious film.</p>
+                            
+                            <h4>Services Offered:</h4>
+                            <ul>
+                                <li>35mm and 120 film development</li>
+                                <li>Black & White (D-76, Rodinal)</li>
+                                <li>Color Negative (C-41)</li>
+                                <li>Color Positive (E-6)</li>
+                                <li>High-resolution scanning (up to 4000 DPI)</li>
+                                <li>Dust and scratch removal</li>
+                            </ul>
+
+                            <h4>Pricing:</h4>
+                            <ul>
+                                <li>35mm B&W Development: $8/roll</li>
+                                <li>35mm Color Development: $12/roll</li>
+                                <li>120 B&W Development: $10/roll</li>
+                                <li>120 Color Development: $15/roll</li>
+                                <li>Basic Scans: $5/roll</li>
+                                <li>Premium Scans: $15/roll</li>
+                            </ul>
+
+                            <button class="btn btn-primary" onclick="openBookingForm('development')">Order Development</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="workshop-tab">
+                    <div class="service-detail">
+                        <div class="detail-image">
+                            <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Photography Workshop">
+                        </div>
+                        <div class="detail-content">
+                            <h3>Photography Workshops</h3>
+                            <p>Learn the art of film photography from our experienced instructors. Our workshops cover everything from basics to advanced techniques.</p>
+                            
+                            <h4>Upcoming Workshops:</h4>
+                            <div class="workshop-list">
+                                <div class="workshop-item">
+                                    <h5>Introduction to Film Photography</h5>
+                                    <p><i class="fas fa-calendar"></i> Every Saturday, 10 AM - 2 PM</p>
+                                    <p><i class="fas fa-dollar-sign"></i> $150 (includes materials)</p>
+                                </div>
+                                <div class="workshop-item">
+                                    <h5>Darkroom Printing Basics</h5>
+                                    <p><i class="fas fa-calendar"></i> Sundays, 1 PM - 5 PM</p>
+                                    <p><i class="fas fa-dollar-sign"></i> $200 (includes materials)</p>
+                                </div>
+                                <div class="workshop-item">
+                                    <h5>Advanced Street Photography</h5>
+                                    <p><i class="fas fa-calendar"></i> Monthly, 2-day workshop</p>
+                                    <p><i class="fas fa-dollar-sign"></i> $350</p>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-primary" onclick="openBookingForm('workshop')">Book Workshop</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeBookingForm()">&times;</span>
+            <h3>Book Our Service</h3>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Type</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a service</option>
+                        <option value="repair">Camera Repair</option>
+                        <option value="development">Film Development</option>
+                        <option value="cleaning">Camera Cleaning</option>
+                        <option value="workshop">Photography Workshop</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Additional Details</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-camera-retro"></i>
+                        <span>Vintage Lens</span>
+                    </div>
+                    <p>Your trusted source for vintage cameras and film photography equipment.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="products.html">Shop</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Photo Street, NY 10001</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@vintagelens.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vintage Lens. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

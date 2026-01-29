@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Vintage Camera Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-camera-retro"></i>
+                <span>Vintage Lens</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="account.html" class="nav-link"><i class="fas fa-user"></i></a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Photo Gallery</h1>
+            <p>Stunning photography captured with vintage cameras</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="gallery-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="street">Street Photography</button>
+                <button class="filter-btn" data-filter="portraits">Portraits</button>
+                <button class="filter-btn" data-filter="travel">Travel</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item" data-category="street">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Street Photography">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Urban Moments</h3>
+                                <p>Shot with Canon AE-1</p>
+                                <div class="photographer">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=50&q=80" alt="Photographer">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-white view-btn" onclick="openLightbox(0)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item" data-category="portraits">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Portrait">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Classic Portrait</h3>
+                                <p>Shot with Leica M6</p>
+                                <div class="photographer">
+                                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=50&q=80" alt="Photographer">
+                                    <span>Jane Smith</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-white view-btn" onclick="openLightbox(1)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item" data-category="travel">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Travel Photography">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Travel Memories</h3>
+                                <p>Shot with Nikon FM2</p>
+                                <div class="photographer">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=50&q=80" alt="Photographer">
+                                    <span>Mike Johnson</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-white view-btn" onclick="openLightbox(2)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Nature Photography">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Natural Beauty</h3>
+                                <p>Shot with Olympus OM-1</p>
+                                <div class="photographer">
+                                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=50&q=80" alt="Photographer">
+                                    <span>Sarah Lee</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-white view-btn" onclick="openLightbox(3)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item" data-category="street">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Street Scene">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>City Life</h3>
+                                <p>Shot with Pentax K1000</p>
+                                <div class="photographer">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=50&q=80" alt="Photographer">
+                                    <span>Tom Wilson</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-white view-btn" onclick="openLightbox(4)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item" data-category="portraits">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Portrait">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Timeless Beauty</h3>
+                                <p>Shot with Leica M6</p>
+                                <div class="photographer">
+                                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=50&q=80" alt="Photographer">
+                                    <span>Emma Davis</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-white view-btn" onclick="openLightbox(5)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 7 -->
+                <div class="gallery-item" data-category="travel">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Travel Scene">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Adventure Awaits</h3>
+                                <p>Shot with Canon AE-1</p>
+                                <div class="photographer">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=50&q=80" alt="Photographer">
+                                    <span>Alex Brown</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-white view-btn" onclick="openLightbox(6)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 8 -->
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Landscape">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Golden Hour</h3>
+                                <p>Shot with Nikon FM2</p>
+                                <div class="photographer">
+                                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=50&q=80" alt="Photographer">
+                                    <span>Lisa Chen</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-white view-btn" onclick="openLightbox(7)">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more">
+                <button class="btn btn-outline">Load More Photos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-image" src="" alt="Gallery Image">
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+                <div class="photographer">
+                    <img id="lightbox-photographer-img" src="" alt="Photographer">
+                    <span id="lightbox-photographer-name"></span>
+                </div>
+            </div>
+            <div class="lightbox-nav">
+                <button class="lightbox-prev" onclick="changeImage(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="lightbox-next" onclick="changeImage(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Submit Your Photos Section -->
+    <section class="submit-photos">
+        <div class="container">
+            <div class="submit-content">
+                <h2>Share Your Vintage Camera Photos</h2>
+                <p>Have you taken amazing photos with vintage cameras? Share them with our community!</p>
+                <button class="btn btn-primary" onclick="openSubmissionForm()">Submit Your Photos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Submission Form Modal -->
+    <div id="submissionModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSubmissionForm()">&times;</span>
+            <h3>Submit Your Photo</h3>
+            <form id="submissionForm">
+                <div class="form-group">
+                    <label for="photo-title">Photo Title</label>
+                    <input type="text" id="photo-title" name="photo-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="photo-category">Category</label>
+                    <select id="photo-category" name="photo-category" required>
+                        <option value="">Select category</option>
+                        <option value="street">Street Photography</option>
+                        <option value="portraits">Portraits</option>
+                        <option value="travel">Travel</option>
+                        <option value="nature">Nature</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="camera-used">Camera Used</label>
+                    <input type="text" id="camera-used" name="camera-used" required>
+                </div>
+                <div class="form-group">
+                    <label for="photo-description">Description</label>
+                    <textarea id="photo-description" name="photo-description" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="photo-file">Upload Photo</label>
+                    <input type="file" id="photo-file" name="photo-file" accept="image/*" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Photo</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-camera-retro"></i>
+                        <span>Vintage Lens</span>
+                    </div>
+                    <p>Your trusted source for vintage cameras and film photography equipment.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="products.html">Shop</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Photo Street, NY 10001</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@vintagelens.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vintage Lens. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

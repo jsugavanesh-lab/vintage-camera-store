@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - Vintage Camera Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-camera-retro"></i>
+                <span>Vintage Lens</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="account.html" class="nav-link active"><i class="fas fa-user"></i></a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>My Account</h1>
+            <p>Manage your orders, favorites, and profile</p>
+        </div>
+    </section>
+
+    <!-- Account Section -->
+    <section class="account">
+        <div class="container">
+            <div class="account-layout">
+                <!-- Account Sidebar -->
+                <aside class="account-sidebar">
+                    <div class="user-info">
+                        <div class="user-avatar">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="User Avatar">
+                        </div>
+                        <div class="user-details">
+                            <h3>John Doe</h3>
+                            <p>john.doe@email.com</p>
+                        </div>
+                    </div>
+
+                    <nav class="account-nav">
+                        <ul>
+                            <li><a href="#dashboard" class="account-nav-link active" onclick="showAccountSection('dashboard')">
+                                <i class="fas fa-tachometer-alt"></i> Dashboard
+                            </a></li>
+                            <li><a href="#orders" class="account-nav-link" onclick="showAccountSection('orders')">
+                                <i class="fas fa-shopping-bag"></i> My Orders
+                            </a></li>
+                            <li><a href="#favorites" class="account-nav-link" onclick="showAccountSection('favorites')">
+                                <i class="fas fa-heart"></i> Favorites
+                            </a></li>
+                            <li><a href="#profile" class="account-nav-link" onclick="showAccountSection('profile')">
+                                <i class="fas fa-user-edit"></i> Profile Settings
+                            </a></li>
+                            <li><a href="#addresses" class="account-nav-link" onclick="showAccountSection('addresses')">
+                                <i class="fas fa-map-marker-alt"></i> Addresses
+                            </a></li>
+                            <li><a href="#payment" class="account-nav-link" onclick="showAccountSection('payment')">
+                                <i class="fas fa-credit-card"></i> Payment Methods
+                            </a></li>
+                            <li><a href="#" class="account-nav-link logout">
+                                <i class="fas fa-sign-out-alt"></i> Logout
+                            </a></li>
+                        </ul>
+                    </nav>
+                </aside>
+
+                <!-- Account Content -->
+                <div class="account-content">
+                    <!-- Dashboard Section -->
+                    <div id="dashboard" class="account-section active">
+                        <h2>Dashboard</h2>
+                        <div class="dashboard-stats">
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-shopping-bag"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>12</h3>
+                                    <p>Total Orders</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>8</h3>
+                                    <p>Favorites</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-truck"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>2</h3>
+                                    <p>Pending Orders</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recent-orders">
+                            <h3>Recent Orders</h3>
+                            <div class="order-list">
+                                <div class="order-item">
+                                    <div class="order-image">
+                                        <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=80&q=80" alt="Order Item">
+                                    </div>
+                                    <div class="order-details">
+                                        <h4>Order #12345</h4>
+                                        <p>Canon AE-1 Camera</p>
+                                        <span class="order-status processing">Processing</span>
+                                    </div>
+                                    <div class="order-info">
+                                        <p class="order-date">March 15, 2024</p>
+                                        <p class="order-total">$450.00</p>
+                                    </div>
+                                </div>
+
+                                <div class="order-item">
+                                    <div class="order-image">
+                                        <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=80&q=80" alt="Order Item">
+                                    </div>
+                                    <div class="order-details">
+                                        <h4>Order #12344</h4>
+                                        <p>Film Development Service</p>
+                                        <span class="order-status completed">Completed</span>
+                                    </div>
+                                    <div class="order-info">
+                                        <p class="order-date">March 10, 2024</p>
+                                        <p class="order-total">$25.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-outline" onclick="showAccountSection('orders')">View All Orders</a>
+                        </div>
+                    </div>
+
+                    <!-- Orders Section -->
+                    <div id="orders" class="account-section">
+                        <h2>My Orders</h2>
+                        <div class="orders-filter">
+                            <select class="filter-select">
+                                <option value="all">All Orders</option>
+                                <option value="processing">Processing</option>
+                                <option value="shipped">Shipped</option>
+                                <option value="delivered">Delivered</option>
+                                <option value="cancelled">Cancelled</option>
+                            </select>
+                        </div>
+
+                        <div class="order-list">
+                            <div class="order-item">
+                                <div class="order-image">
+                                    <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=80&q=80" alt="Order Item">
+                                </div>
+                                <div class="order-details">
+                                    <h4>Order #12345</h4>
+                                    <p>Canon AE-1 Camera + 50mm Lens</p>
+                                    <span class="order-status processing">Processing</span>
+                                </div>
+                                <div class="order-info">
+                                    <p class="order-date">March 15, 2024</p>
+                                    <p class="order-total">$550.00</p>
+                                    <button class="btn btn-sm btn-outline">View Details</button>
+                                </div>
+                            </div>
+
+                            <div class="order-item">
+                                <div class="order-image">
+                                    <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=80&q=80" alt="Order Item">
+                                </div>
+                                <div class="order-details">
+                                    <h4>Order #12344</h4>
+                                    <p>Film Development Service (5 rolls)</p>
+                                    <span class="order-status completed">Completed</span>
+                                </div>
+                                <div class="order-info">
+                                    <p class="order-date">March 10, 2024</p>
+                                    <p class="order-total">$25.00</p>
+                                    <button class="btn btn-sm btn-outline">View Details</button>
+                                </div>
+                            </div>
+
+                            <div class="order-item">
+                                <div class="order-image">
+                                    <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=80&q=80" alt="Order Item">
+                                </div>
+                                <div class="order-details">
+                                    <h4>Order #12343</h4>
+                                    <p>Polaroid SX-70 Camera</p>
+                                    <span class="order-status shipped">Shipped</span>
+                                </div>
+                                <div class="order-info">
+                                    <p class="order-date">March 5, 2024</p>
+                                    <p class="order-total">$350.00</p>
+                                    <button class="btn btn-sm btn-outline">Track Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Favorites Section -->
+                    <div id="favorites" class="account-section">
+                        <h2>My Favorites</h2>
+                        <div class="favorites-grid">
+                            <div class="favorite-item">
+                                <div class="favorite-image">
+                                    <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Favorite Item">
+                                    <button class="remove-favorite">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+                                <div class="favorite-info">
+                                    <h4>Leica M6</h4>
+                                    <p>Legendary rangefinder camera</p>
+                                    <div class="favorite-price">$2,800</div>
+                                    <button class="btn btn-primary btn-sm">Add to Cart</button>
+                                </div>
+                            </div>
+
+                            <div class="favorite-item">
+                                <div class="favorite-image">
+                                    <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Favorite Item">
+                                    <button class="remove-favorite">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+                                <div class="favorite-info">
+                                    <h4>Nikon FM2</h4>
+                                    <p>Classic 35mm SLR camera</p>
+                                    <div class="favorite-price">$650</div>
+                                    <button class="btn btn-primary btn-sm">Add to Cart</button>
+                                </div>
+                            </div>
+
+                            <div class="favorite-item">
+                                <div class="favorite-image">
+                                    <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Favorite Item">
+                                    <button class="remove-favorite">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+                                <div class="favorite-info">
+                                    <h4>Olympus OM-1</h4>
+                                    <p>Compact SLR camera</p>
+                                    <div class="favorite-price">$380</div>
+                                    <button class="btn btn-primary btn-sm">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Profile Section -->
+                    <div id="profile" class="account-section">
+                        <h2>Profile Settings</h2>
+                        <form class="profile-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="first-name">First Name</label>
+                                    <input type="text" id="first-name" name="first-name" value="John">
+                                </div>
+                                <div class="form-group">
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" id="last-name" name="last-name" value="Doe">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" value="john.doe@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" value="(555) 123-4567">
+                            </div>
+                            <div class="form-group">
+                                <label for="bio">Bio</label>
+                                <textarea id="bio" name="bio" rows="4">Passionate film photographer and vintage camera enthusiast.</textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Save Changes</button>
+                        </form>
+                    </div>
+
+                    <!-- Addresses Section -->
+                    <div id="addresses" class="account-section">
+                        <h2>Shipping Addresses</h2>
+                        <div class="addresses-list">
+                            <div class="address-card">
+                                <div class="address-header">
+                                    <h4>Home Address</h4>
+                                    <span class="address-badge default">Default</span>
+                                </div>
+                                <div class="address-details">
+                                    <p>John Doe</p>
+                                    <p>123 Main Street</p>
+                                    <p>Apt 4B</p>
+                                    <p>New York, NY 10001</p>
+                                    <p>United States</p>
+                                    <p>(555) 123-4567</p>
+                                </div>
+                                <div class="address-actions">
+                                    <button class="btn btn-sm btn-outline">Edit</button>
+                                    <button class="btn btn-sm btn-outline">Remove</button>
+                                </div>
+                            </div>
+
+                            <div class="address-card">
+                                <div class="address-header">
+                                    <h4>Work Address</h4>
+                                </div>
+                                <div class="address-details">
+                                    <p>John Doe</p>
+                                    <p>456 Business Ave</p>
+                                    <p>Suite 200</p>
+                                    <p>New York, NY 10002</p>
+                                    <p>United States</p>
+                                    <p>(555) 987-6543</p>
+                                </div>
+                                <div class="address-actions">
+                                    <button class="btn btn-sm btn-outline">Edit</button>
+                                    <button class="btn btn-sm btn-outline">Remove</button>
+                                    <button class="btn btn-sm btn-primary">Set as Default</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline">Add New Address</button>
+                    </div>
+
+                    <!-- Payment Section -->
+                    <div id="payment" class="account-section">
+                        <h2>Payment Methods</h2>
+                        <div class="payment-methods">
+                            <div class="payment-card">
+                                <div class="payment-info">
+                                    <div class="payment-type">
+                                        <i class="fab fa-cc-visa"></i>
+                                        <span>Visa ending in 4242</span>
+                                    </div>
+                                    <span class="payment-badge default">Default</span>
+                                </div>
+                                <div class="payment-actions">
+                                    <button class="btn btn-sm btn-outline">Edit</button>
+                                    <button class="btn btn-sm btn-outline">Remove</button>
+                                </div>
+                            </div>
+
+                            <div class="payment-card">
+                                <div class="payment-info">
+                                    <div class="payment-type">
+                                        <i class="fab fa-cc-mastercard"></i>
+                                        <span>Mastercard ending in 5555</span>
+                                    </div>
+                                </div>
+                                <div class="payment-actions">
+                                    <button class="btn btn-sm btn-outline">Edit</button>
+                                    <button class="btn btn-sm btn-outline">Remove</button>
+                                    <button class="btn btn-sm btn-primary">Set as Default</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline">Add Payment Method</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-camera-retro"></i>
+                        <span>Vintage Lens</span>
+                    </div>
+                    <p>Your trusted source for vintage cameras and film photography equipment.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="products.html">Shop</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Photo Street, NY 10001</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@vintagelens.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vintage Lens. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

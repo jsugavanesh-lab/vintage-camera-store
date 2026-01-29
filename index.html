@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Camera Store - Rediscover Film Photography</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-camera-retro"></i>
+                <span>Vintage Lens</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="account.html" class="nav-link"><i class="fas fa-user"></i></a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title fade-in">Rediscover the Art of Film Photography</h1>
+                <p class="hero-subtitle fade-in-delay">Authentic vintage cameras and accessories for the modern photographer</p>
+                <div class="hero-buttons fade-in-delay-2">
+                    <a href="products.html" class="btn btn-primary">Shop Now</a>
+                    <a href="services.html" class="btn btn-secondary">Our Services</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="camera-showcase">
+                    <div class="camera-item active">
+                        <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Vintage Camera">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Featured Cameras -->
+    <section class="featured-cameras">
+        <div class="container">
+            <h2 class="section-title">Featured Cameras</h2>
+            <div class="camera-grid">
+                <div class="camera-card">
+                    <div class="camera-image">
+                        <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Canon AE-1">
+                        <div class="camera-overlay">
+                            <span class="camera-badge">Best Seller</span>
+                        </div>
+                    </div>
+                    <div class="camera-info">
+                        <h3>Canon AE-1</h3>
+                        <p>Classic 35mm SLR camera</p>
+                        <div class="camera-price">$450</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+                <div class="camera-card">
+                    <div class="camera-image">
+                        <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Leica M6">
+                        <div class="camera-overlay">
+                            <span class="camera-badge premium">Premium</span>
+                        </div>
+                    </div>
+                    <div class="camera-info">
+                        <h3>Leica M6</h3>
+                        <p>Legendary rangefinder camera</p>
+                        <div class="camera-price">$2,800</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+                <div class="camera-card">
+                    <div class="camera-image">
+                        <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Polaroid SX-70">
+                        <div class="camera-overlay">
+                            <span class="camera-badge vintage">Vintage</span>
+                        </div>
+                    </div>
+                    <div class="camera-info">
+                        <h3>Polaroid SX-70</h3>
+                        <p>Instant camera classic</p>
+                        <div class="camera-price">$350</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Services -->
+    <section class="featured-services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Camera Repair</h3>
+                    <p>Professional repair and restoration services for all vintage cameras</p>
+                    <a href="services.html" class="btn btn-text">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3>Film Development</h3>
+                    <p>High-quality film development and scanning services</p>
+                    <a href="services.html" class="btn btn-text">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Photography Workshops</h3>
+                    <p>Learn film photography from experienced professionals</p>
+                    <a href="services.html" class="btn btn-text">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="about-preview">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Founded in 2015, Vintage Lens is dedicated to preserving the art of film photography. We believe in the timeless quality and unique character that only analog photography can provide.</p>
+                    <a href="about.html" class="btn btn-primary">Learn More About Us</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Store Interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Photographers Say</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <p>"The quality of their vintage cameras is exceptional. My Canon AE-1 works perfectly and the customer service was outstanding."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Customer">
+                            <div>
+                                <h4>Sarah Johnson</h4>
+                                <p>Professional Photographer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Their film development service is top-notch. The scans are beautiful and the turnaround time is impressive."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Customer">
+                            <div>
+                                <h4>Michael Chen</h4>
+                                <p>Film Enthusiast</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Get the latest vintage camera arrivals and exclusive offers</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-camera-retro"></i>
+                        <span>Vintage Lens</span>
+                    </div>
+                    <p>Your trusted source for vintage cameras and film photography equipment.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="products.html">Shop</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Photo Street, NY 10001</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@vintagelens.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vintage Lens. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

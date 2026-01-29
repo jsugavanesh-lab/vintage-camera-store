@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Vintage Camera Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-camera-retro"></i>
+                <span>Vintage Lens</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="products.html" class="nav-link active">Products</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="account.html" class="nav-link"><i class="fas fa-user"></i></a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Discover our curated collection of vintage cameras and accessories</p>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section class="shop">
+        <div class="container">
+            <div class="shop-layout">
+                <!-- Filters Sidebar -->
+                <aside class="filters">
+                    <h3>Filters</h3>
+                    
+                    <div class="filter-group">
+                        <h4>Categories</h4>
+                        <ul>
+                            <li><label><input type="checkbox" name="category" value="film-cameras"> Film Cameras</label></li>
+                            <li><label><input type="checkbox" name="category" value="instant-cameras"> Instant Cameras</label></li>
+                            <li><label><input type="checkbox" name="category" value="lenses"> Lenses</label></li>
+                            <li><label><input type="checkbox" name="category" value="accessories"> Accessories</label></li>
+                        </ul>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Brand</h4>
+                        <ul>
+                            <li><label><input type="checkbox" name="brand" value="canon"> Canon</label></li>
+                            <li><label><input type="checkbox" name="brand" value="nikon"> Nikon</label></li>
+                            <li><label><input type="checkbox" name="brand" value="leica"> Leica</label></li>
+                            <li><label><input type="checkbox" name="brand" value="pentax"> Pentax</label></li>
+                            <li><label><input type="checkbox" name="brand" value="olympus"> Olympus</label></li>
+                        </ul>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Price Range</h4>
+                        <div class="price-range">
+                            <input type="range" min="0" max="5000" value="2500" class="price-slider">
+                            <div class="price-values">
+                                <span>$0</span>
+                                <span id="price-value">$2500</span>
+                                <span>$5000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Condition</h4>
+                        <ul>
+                            <li><label><input type="checkbox" name="condition" value="mint"> Mint</label></li>
+                            <li><label><input type="checkbox" name="condition" value="good"> Good</label></li>
+                            <li><label><input type="checkbox" name="condition" value="used"> Used</label></li>
+                        </ul>
+                    </div>
+
+                    <button class="btn btn-outline btn-full">Apply Filters</button>
+                </aside>
+
+                <!-- Products Grid -->
+                <div class="products-section">
+                    <div class="products-header">
+                        <div class="results-count">
+                            <span>Showing 24 products</span>
+                        </div>
+                        <div class="sort-options">
+                            <select class="sort-select">
+                                <option value="featured">Featured</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="name">Name: A-Z</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="products-grid">
+                        <!-- Product 1 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Canon AE-1">
+                                <div class="product-overlay">
+                                    <button class="btn btn-white btn-sm">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Canon AE-1</h3>
+                                <p class="product-category">Film Cameras</p>
+                                <div class="product-price">$450</div>
+                                <div class="product-condition">Condition: Excellent</div>
+                                <button class="btn btn-primary btn-full">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Leica M6">
+                                <div class="product-badge premium">Premium</div>
+                                <div class="product-overlay">
+                                    <button class="btn btn-white btn-sm">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Leica M6</h3>
+                                <p class="product-category">Film Cameras</p>
+                                <div class="product-price">$2,800</div>
+                                <div class="product-condition">Condition: Mint</div>
+                                <button class="btn btn-primary btn-full">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 3 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Polaroid SX-70">
+                                <div class="product-badge vintage">Vintage</div>
+                                <div class="product-overlay">
+                                    <button class="btn btn-white btn-sm">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Polaroid SX-70</h3>
+                                <p class="product-category">Instant Cameras</p>
+                                <div class="product-price">$350</div>
+                                <div class="product-condition">Condition: Good</div>
+                                <button class="btn btn-primary btn-full">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 4 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Nikon FM2">
+                                <div class="product-overlay">
+                                    <button class="btn btn-white btn-sm">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Nikon FM2</h3>
+                                <p class="product-category">Film Cameras</p>
+                                <div class="product-price">$650</div>
+                                <div class="product-condition">Condition: Excellent</div>
+                                <button class="btn btn-primary btn-full">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 5 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Olympus OM-1">
+                                <div class="product-overlay">
+                                    <button class="btn btn-white btn-sm">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Olympus OM-1</h3>
+                                <p class="product-category">Film Cameras</p>
+                                <div class="product-price">$380</div>
+                                <div class="product-condition">Condition: Good</div>
+                                <button class="btn btn-primary btn-full">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 6 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1595475884321-9c1b2b4c2c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Pentax K1000">
+                                <div class="product-badge sale">Sale</div>
+                                <div class="product-overlay">
+                                    <button class="btn btn-white btn-sm">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Pentax K1000</h3>
+                                <p class="product-category">Film Cameras</p>
+                                <div class="product-price">
+                                    <span class="original-price">$320</span>
+                                    <span class="sale-price">$280</span>
+                                </div>
+                                <div class="product-condition">Condition: Used</div>
+                                <button class="btn btn-primary btn-full">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <button class="btn btn-outline" disabled>Previous</button>
+                        <button class="btn btn-primary active">1</button>
+                        <button class="btn btn-outline">2</button>
+                        <button class="btn btn-outline">3</button>
+                        <button class="btn btn-outline">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-camera-retro"></i>
+                        <span>Vintage Lens</span>
+                    </div>
+                    <p>Your trusted source for vintage cameras and film photography equipment.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="products.html">Shop</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Photo Street, NY 10001</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@vintagelens.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vintage Lens. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
